@@ -1,0 +1,50 @@
+{
+  "build": {
+    "name": "tw_bot",
+    "version": "2.1",
+    "author": "stefan2200"
+  },
+  "server": {
+    "server": "nlc1",
+    "endpoint": "https://cs97.divokekmeny.cz/game.php",
+    "server_on_twstats": false
+  },
+  "reporting": {
+    "enabled": false,
+    "connection_string": "file://cache/logs/twb_{ts}.log"
+  },
+  "notifications": {
+    "enabled": true,
+    "channel_id": "640177240",
+    "token": ""
+  },
+  "bot": {
+    "active_hours": "6-23",
+    "delay_factor": 1.0,
+    "active_delay": 200,
+    "inactive_still_active": true,
+    "inactive_delay": 2000,
+    "add_new_villages": true,
+    "village_name_template": "Vinsho {num}",
+    "village_name_number_length": 3,
+    "auto_set_village_names": true,
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+    "check_update": true
+  },
+  "building": {
+    "manage_buildings": true,
+    "default": "vinsho_basic",
+    "max_lookahead": 2,
+    "max_queued_items": 2
+  },
+  "units": {
+    "recruit": false,
+    "upgrade": false,
+    "default": "basic",
+    "batch_size": 25,
+    "manage_defence": false,
+    "remove_manual_queued": false,
+    "randomize_unit_queue": true
+  },
+  "village_template": {
+    "building": "vinsho_basic",
